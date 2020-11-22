@@ -6,7 +6,7 @@ import androidx.room.PrimaryKey
 
 
 @Entity(tableName = "note_table")
-data class Note(
+data class NoteEntity(
     @ColumnInfo(name = "title")
     var title:String,
     @ColumnInfo(name = "subject")

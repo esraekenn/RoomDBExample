@@ -5,17 +5,18 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 
 class NoteListAdapter(
-    val noteList: List<Note>, val context: Context
+    val noteEntityList: List<NoteEntity>, val context: Context,
+    private val setOnClickListener: (note: NoteEntity, position: Int) -> Unit
 ) : RecyclerView.Adapter<NoteListViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NoteListViewHolder {
         return NoteListViewHolder(parent)
     }
 
     override fun onBindViewHolder(holderList: NoteListViewHolder, position: Int) {
-        holderList.bind(noteList[position])
+        holderList.bind(noteEntityList[position],setOnClickListener)
     }
 
     override fun getItemCount(): Int {
-        return noteList.size
+        return noteEntityList.size
     }
 }
