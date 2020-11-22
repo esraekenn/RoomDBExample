@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">RoomDBExample</string>
+    <string name="new_note">Yeni bir not</string>
+    <string name="note_title">Başlık</string>
+    <string name="enter_new_title">Bir başlık giriniz</string>
+    <string name="enter_new_subject">Bir konu giriniz</string>
+    <string name="enter_new_description">Bir açıklama giriniz</string>
+    <string name="title">Başlık</string>
+    <string name="subject">Konu</string>
+    <string name="description">Açıklama</string>
+    <string name="save">Kaydet</string>
+    <string name="title_activity_create_note">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>
